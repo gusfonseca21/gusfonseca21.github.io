@@ -1,13 +1,10 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
+import AnimatedBackground from "../components/AnimatedBackground";
 import "./App.css";
 
 function App() {
-  const [user1Text, setUser1Text] = useState(undefined);
-  const [user2Text, setUser2Text] = useState(undefined);
-
   return (
-    <div className='App'>
+    <AnimatedBackground>
       <div className='inputDiv'>
         <label className='inputLabel'>Digite um texto</label>
         <input
@@ -20,14 +17,14 @@ function App() {
       <div className='textsDiv'>
         <div className='userDiv'>
           <h1>Usuário 1</h1>
-          <h2 className='userText'>{user1Text}</h2>
+          <h2 className='userText'>Teste</h2>
         </div>
         <div className='userDiv'>
           <h1>Usuário 2</h1>
-          <h2 className='userText'>{user2Text}</h2>
+          <h2 className='userText'>Aa</h2>
         </div>
       </div>
-    </div>
+    </AnimatedBackground>
   );
 }
 
